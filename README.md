@@ -19,6 +19,7 @@ e adicionar build.gradle no módulo. Isso também pode ser feito pela ide.
 
 - [Composite builds](https://docs.gradle.org/current/userguide/composite_builds.html)
   - Bom para compartilhar lógica de build ou isolar acesso a plugins com convenções
+  - Cada build é isolada
 
 
 ## Algumas tasks úteis
@@ -38,8 +39,9 @@ plugins {
 ```
 
 Gradle não recomenda subprojects e allprojects para configurar [coisas em comuns entre projetos](https://docs.gradle.org/current/userguide/sharing_build_logic_between_subprojects.html#sec:convention_plugins_vs_cross_configuration),
-pois deixa implicito as configurações, pode-se tornar complexo, pode trazer acomplamento entre os projetos
-build.gradle na raiz permite centralizar dependências e configurações nos filhos
+pois deixa implicito as configurações, pode-se tornar complexo, pode trazer acomplamento entre os projetos e problemas de otimização.
+
+O `build.gradle` na raiz permite centralizar dependências e configurações nos filhos
 utilizando subprojects ou allprojects (que inclui o projeto raiz também)
 **gradle não recomenda isso**
 Configuração condicional no build.gradle raiz não faz muito sentido é melhor configurar no projeto especifico
@@ -203,3 +205,7 @@ Define configurações gerais do projeto como módulos e configurações de plug
 - `core` - plugins nativos do gradle
 - `community` - não é nativo do gradle, mas pode ser adicionado
 - `local` - plugins criados localmente
+
+#### [Plugin for convensions](https://docs.gradle.org/current/userguide/custom_plugins.html#sec:convention_plugins)
+- Adiciona convenções compartilhadas entre o projeto (lugar centralizado para configurações em comuns entre projetos)
+- É possível definir versão do java, configurações de plugins, criação de tasks, dependências etc
