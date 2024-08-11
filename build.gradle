@@ -1,0 +1,33 @@
+def javaProjects = [
+        project(":app")
+]
+
+project(":app") {
+    task("test2").doLast {
+        println("Some task on project $project.name")
+    }
+}
+
+configure(javaProjects) {
+    println("Configurating project = $project.name")
+//    legacy version of apply plugins - plugins block recommended by for some blocks like subproject/allproject only legacy works
+    apply plugin: "java"
+
+    group = 'br.com.cleanarch'
+    version = '1.0-SNAPSHOT'
+
+    dependencies {
+        testImplementation libs.junit
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
+
+
+
+
+subprojects {
+
+}

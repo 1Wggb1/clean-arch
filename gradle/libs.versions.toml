@@ -1,0 +1,8 @@
+[versions]
+junit = "5.10.0"
+
+[libraries]
+junit = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
+
+[plugins]
+#androidApplication = { id = "com.android.application", version.ref = "androidGradlePlugin" }

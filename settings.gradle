@@ -1,0 +1,13 @@
+dependencyResolutionManagement {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'clean-arch'
+
+include "app"
+include "architecture-tests"
+include "integration-tests"
+
