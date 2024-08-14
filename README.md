@@ -209,3 +209,6 @@ Define configurações gerais do projeto como módulos e configurações de plug
 #### [Plugin for convensions](https://docs.gradle.org/current/userguide/custom_plugins.html#sec:convention_plugins)
 - Adiciona convenções compartilhadas entre o projeto (lugar centralizado para configurações em comuns entre projetos)
 - É possível definir versão do java, configurações de plugins, criação de tasks, dependências etc
+
+
+[Clean arch](https://developers.redhat.com/articles/2023/08/08/implementing-clean-architecture-solutions-practical-example)
