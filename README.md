@@ -242,12 +242,19 @@ Define configurações gerais do projeto como módulos e configurações de plug
 
 [Clean arch](https://developers.redhat.com/articles/2023/08/08/implementing-clean-architecture-solutions-practical-example)
 
-## Openapi and openapi generator
+## Api First, Openapi e Openapi generator
+- Openapi (Swagger): especificação que poder ser utilizada na abordagem Api First (definição do contrato da api "endpoints e modelos" antes de iniciar o desenvolvimento);
 
-https://swagger.io/specification/
-https://editor-next.swagger.io/
-https://openapi-generator.tech/docs/generators/spring
-https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-gradle-plugin
-https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator/src/main/resources/JavaSpring
+- Openapi generator: gerador de código a partir da especificação (openapi - arquivo yaml ou json).
+
+No projeto foi feito uma poc utilizando api first e o openapi generator. As configurações do gerador de código está presenta na pasta app.
+A especificação swagger utilizada pelo gerador da poc está presente na raiz do projeto. Nela está definido os endpoints e modelos de uma api fake para encontrar anúncios de carros (ideia baseada no web-scrapping-car-ads).
+
+
+[Especificação Openapi - Swagger](https://swagger.io/specification/)
+[Openapi editor](https://editor-next.swagger.io/)
+[Openapi Generator - spring](https://openapi-generator.tech/docs/generators/spring)
+[Openapi Generator - plugin gradle](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-gradle-plugin)
+[Openapi generator - templates dos códigos gerados](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator/src/main/resources/JavaSpring)
 
 
