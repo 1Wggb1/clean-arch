@@ -16,18 +16,37 @@ configure(javaProjects) {
     group = 'br.com.cleanarch'
     version = '1.0-SNAPSHOT'
 
+}
+
+subprojects {
+    apply plugin: "java"
+    apply plugin: "jacoco"
+
     dependencies {
         testImplementation libs.junit
     }
 
+
     test {
+        finalizedBy jacocoTestReport
         useJUnitPlatform()
     }
-}
 
 
+    jacoco {
+        toolVersion = "0.8.12"
+    }
 
+    //jacocoTest.exec - arquivo com métricas do coverage
 
-subprojects {
-
+    jacocoTestReport {
+        dependsOn test
+        reports {
+            xml.required = false
+            csv.required = false
+            html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+        }
+        sourceSets project(':app').sourceSets.main
+        executionData = fileTree(dir: project.projectDir, includes: ["**/*.exec"])
+    }
 }

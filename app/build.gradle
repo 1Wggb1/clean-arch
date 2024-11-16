@@ -1,0 +1,49 @@
+plugins {
+    alias(libs.plugins.openapiGenerator)
+}
+
+dependencies {
+    runtimeOnly libs.h2
+    implementation libs.springboot
+    implementation libs.springbootData
+    implementation libs.springbootValidation
+    implementation libs.swaggerAnnotations
+}
+
+openApiGenerate {
+    generatorName = "spring"
+    inputSpec = "${rootDir}/openapi-spec.yml"
+    outputDir = "${layout.buildDirectory.get()}/generated"
+    configOptions = [
+            basePackage          : "br.com.cleanarch",
+            apiPackage           : "br.com.cleanarch.api",
+            modelPackage         : "br.com.cleanarch.dto",
+
+            delegatePattern      : "false",
+            generateBuilders     : "true",
+            interfaceOnly        : "true",
+            skipDefaultInterface : "true",
+            requestMappingMode   : "api_interface",
+            openApiNullable      : "false",
+
+            performBeanValidation: "true",
+            useBeanValidation    : "true",
+            useSpringBoot3       : "true",
+            serializableModel    : "true",
+    ]
+    globalProperties = [
+            models: "",
+            apis  : ""
+    ]
+    cleanupOutput = true
+}
+
+compileJava.dependsOn tasks.openApiGenerate
+
+sourceSets {
+    main {
+        java {
+            srcDir("build/generated/src/main/java")
+        }
+    }
+}

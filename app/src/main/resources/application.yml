@@ -1,0 +1,12 @@
+javax.persistence.schema-generation.scripts.action: drop-and-create
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:caradsdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  h2:
+    console.enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect

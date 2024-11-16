@@ -1,0 +1,185 @@
+openapi: 3.1.0
+info:
+  title: Car ads - OpenAPI 3.1
+  description: |-
+    Car ads search
+  termsOfService: http://swagger.io/terms/
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.11
+servers:
+  - url: http:/localhost:8080/api/v1
+tags:
+  - name: car
+    description: Everything about your car ads search
+paths:
+  /cars-ads:
+    post:
+      tags:
+        - car
+      summary: Create a search of car ads
+      description: Create a search of car ads
+      operationId: createCarAdsSearch
+      requestBody:
+        description: Create a search of car ads
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AbstractCarAds'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AbstractCarAds'
+        '400':
+          description: Invalid input
+        '422':
+          description: Validation exception
+  /cars-ads/{carAdsSearchId}:
+    get:
+      tags:
+        - pet
+      summary: Find car ads by id
+      description: Returns car ads result from created search
+      operationId: findCarAdsBySearchId
+      parameters:
+        - name: carAdsSearchId
+          in: path
+          description: Id from search request
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: page
+          in: query
+          description: Page number
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: size
+          in: query
+          description: Size by page
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CarAdsResponseList'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Car ads not found
+components:
+  schemas:
+    AbstractCarAds:
+      type: object
+      discriminator:
+        propertyName: type
+        mapping:
+          REQUEST: "#/components/schemas/CarAdsRequest"
+          RESPONSE: "#/components/schemas/CarAdsResponseItem"
+      properties:
+        type:
+          type: string
+          enum:
+            - REQUEST
+            - RESPONSE
+          examples: [ "REQUEST" ]
+        brand:
+          type: string
+          examples: [ "Honda" ]
+        model:
+          type: string
+          examples: [ "CRV" ]
+        modelFabricationYear:
+          type: integer
+          format: int64
+          examples: [ 2008 ]
+        modelYear:
+          type: integer
+          format: int64
+          examples: [ 2009 ]
+        minKm:
+          type: number
+          format: double
+          minimum: 0
+          examples: [ 2999 ]
+        maxKm:
+          type: number
+          format: double
+          minimum: 0
+          examples: [ 3999.99 ]
+        price:
+          type: number
+          format: double
+          minimum: 0
+          examples: [ 40.998 ]
+        city:
+          type: string
+          examples: [ "SP" ]
+      required:
+        - type
+        - brand
+        - model
+    CarAdsRequest:
+      allOf:
+        - $ref: "#/components/schemas/AbstractCarAds"
+    CarAdsResponseItem:
+      allOf:
+        - $ref: "#/components/schemas/AbstractCarAds"
+        - type: object
+          properties:
+            id:
+              type: integer
+              format: int64
+              examples: [ 98987 ]
+            seller:
+              type: string
+              examples: [ "José - 11 92223-4442 - jose_b@rust.ru" ]
+    CarAdsResponseList:
+      type: object
+      properties:
+        pageable:
+          $ref: "#/components/schemas/CarAdsPageable"
+        results:
+          type: array
+          items:
+            $ref: "#/components/schemas/CarAdsResponseItem"
+    CarAdsPageable:
+      type: object
+      properties:
+        page:
+          type: integer
+          format: int64
+          examples: [ 1, 3 ]
+        size:
+          type: integer
+          format: int64
+          examples: [ 10, 25, 50 ]
+        totalOfAds:
+          type: integer
+          format: int64
+          examples: [ 100, 30 ]
+    ErrorResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+          examles: [ 400, 404, 501 ]
+        type:
+          type: string
+          examples: [ "internalError", "validationError" ]
+        message:
+          type: string
+          examples: [ "Car Ads with id xxxxx not found.", "Your payload is invalid. Required fields not filled (city, brand)." ]
