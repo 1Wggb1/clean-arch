@@ -247,8 +247,15 @@ Define configurações gerais do projeto como módulos e configurações de plug
 
 - Openapi generator: gerador de código a partir da especificação (openapi - arquivo yaml ou json).
 
-No projeto foi feito uma poc utilizando api first e o openapi generator. As configurações do gerador de código está presenta na pasta app.
-A especificação swagger utilizada pelo gerador da poc está presente na raiz do projeto. Nela está definido os endpoints e modelos de uma api fake para encontrar anúncios de carros (ideia baseada no web-scrapping-car-ads).
+No projeto foi feito uma poc utilizando api first e o openapi generator. As configurações do gerador de código está presente na pasta app. Já
+a especificação swagger utilizada pelo gerador da poc está presente na raiz do projeto. Nela está definido os endpoints e modelos de uma api fake para encontrar anúncios de carros (ideia baseada no web-scrapping-car-ads).
+
+
+#### Alguns tradeoff do openapi generator
+- Algumas configurações tem acoplamento, ou seja, desligando uma desliga outra, por exemplo, delegatorPattern, interfaceOnly, skipInterfaceDefault. E algumas configurações parecem confusas, por exemplo, performBeanValidations, useBeanValidations;
+- Códigos dos modelos gerados tem setters (o que não parece legal para dtos que deveriam ser imutáveis);
+- Classes geradas possuem imports não utilizados. O que pode fazer o build do projeto demorar um pouco mais, no caso de existir muitas classes (é possível usar um linter como spotless, mas imports * não são removidos);
+- Padrão delegator parece um pouco complicado e não parece trazer tanta vantagem (é feito um mix de conceitos entre controller e service, isso porque, ao utilizar delegator é dado uma classe que deve ser um service. Essa classe contém a  responsabilidade de retornar um ResponseEntity que faria mais sentido controller para um controller - acredito que é possível fazer a modificação para não retornar esse wrapper).
 
 
 [Especificação Openapi - Swagger](https://swagger.io/specification/)
