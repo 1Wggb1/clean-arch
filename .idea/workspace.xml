@@ -5,91 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2397ec98-9e0e-47ea-8d2d-d8857a2d5e43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Generics/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generics/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generics/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generics/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generics/Generics.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generics/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generics/src/main/java/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generics/src/main/java/Comparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generics/src/main/java/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generics/src/main/java/Sum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generics/target/classes/Comparator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generics/target/classes/Sum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/6.1/fileContent/fileContent.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/6.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/build/classes/java/main/com/br/springsecurity/sample/boot/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/build/classes/java/main/com/br/springsecurity/sample/security/MvcConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/build/classes/java/main/com/br/springsecurity/sample/security/WebSecurityConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/build/libs/SpringSecuritySample-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/build/resources/main/template/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/build/resources/main/template/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/build/resources/main/template/welcome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/out/production/classes/com/br/springsecurity/sample/boot/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/out/production/classes/com/br/springsecurity/sample/security/MvcConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/out/production/classes/com/br/springsecurity/sample/security/WebSecurityConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/out/production/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/out/production/resources/templates/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/out/production/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/out/production/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/src/main/java/com/br/springsecurity/sample/boot/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/src/main/java/com/br/springsecurity/sample/security/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/src/main/java/com/br/springsecurity/sample/security/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/src/main/resources/templates/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecuritySample/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../firestore/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../firestore/emulators/function-cloud.dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../firestore/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../firestore/src/main/java/br/com/firestore/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../firestore/src/main/java/br/com/firestore/FirebaseDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../firestore/src/main/java/br/com/firestore/FirestoreConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../firestore/src/main/java/br/com/firestore/Function.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../firestore/src/main/java/br/com/firestore/PubBackgoudFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projecteuler/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projecteuler/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projecteuler/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projecteuler/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projecteuler/.idea/saveactions_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projecteuler/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projecteuler/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projecteuler/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projecteuler/projecteuler.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projecteuler/src/main/java/Problem399.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projecteuler/src/main/java/Sieves.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projecteuler/target/classes/Problem399.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projecteuler/target/classes/Sieves.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/configuration/DataProviderConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/core/entity/CarAdsRequestBusiness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/dataproviders/database/DatabaseProviderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/dataproviders/database/entity/PersistentCarAds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/configuration/CarAdsUseCaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/configuration/CarAdsUseCaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/configuration/DatabaseDataProviderConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/configuration/EntrypointConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/configuration/EntrypointConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/core/dataprovider/DatabaseProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/core/dataprovider/DatabaseProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/core/entity/CarAdsBusiness.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/core/usecase/CarAdsUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/core/usecase/CarAdsUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/dataprovider/database/PersistentCarAds.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/dataprovider/database/h2/H2ProviderImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/entrypoint/rest/RestApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/cleanarch/entrypoint/rest/RestApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/architecture-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/architecture-tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openapi-spec.yml" beforeDir="false" afterPath="$PROJECT_DIR$/openapi-spec.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,13 +67,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="clean-arch" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="clean-arch" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
+                <item name="openapi tools" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -147,12 +76,20 @@
       </state>
     </system>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2kW9gFakxgrQATZgeBHzLe1Vx7b" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -161,13 +98,33 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Application.executor": "Debug",
+    "Application.Main.executor": "Debug",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.clean-arch [assemble].executor": "Run",
     "Gradle.clean-arch [build].executor": "Run",
     "Gradle.clean-arch [clean].executor": "Run",
+    "Gradle.clean-arch [jacocoTestReport].executor": "Run",
+    "Gradle.clean-arch [openApiGenerate].executor": "Run",
+    "Gradle.clean-arch [test].executor": "Run",
     "Gradle.clean-arch.executor": "Debug",
+    "JUnit.ArchitectureTest.classInConfigurationCannotBeAnyDependencyOfAnyAnotherLayer.executor": "Debug",
+    "JUnit.ArchitectureTest.classInCoreCannotBeAnyDependencyOfAnyAnotherLayer (1).executor": "Debug",
+    "JUnit.ArchitectureTest.classInCoreCannotBeAnyDependencyOfAnyAnotherLayer.executor": "Debug",
+    "JUnit.MainTest.test.executor": "Debug",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/work/idea-projects/clean-arch"
+    "last_opened_file_path": "/home/willgarbo/Work/component2learn",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "settings.saveactions"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -175,8 +132,8 @@
       <recent name="C:\work\idea-projects\clean-arch\gradle" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.clean-arch">
-    <configuration name="clean-arch [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="JUnit.ArchitectureTest.classInCoreCannotBeAnyDependencyOfAnyAnotherLayer">
+    <configuration name="clean-arch [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -187,7 +144,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value="assemble" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -220,31 +177,61 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="clean-arch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
+    <configuration name="ArchitectureTest.classInConfigurationCannotBeAnyDependencyOfAnyAnotherLayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clean-arch.architecture-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.carads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.carads" />
+      <option name="MAIN_CLASS_NAME" value="br.com.carads.ArchitectureTest" />
+      <option name="METHOD_NAME" value="classInConfigurationCannotBeAnyDependencyOfAnyAnotherLayer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArchitectureTest.classInCoreCannotBeAnyDependencyOfAnyAnotherLayer (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clean-arch.architecture-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.carads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.carads" />
+      <option name="MAIN_CLASS_NAME" value="br.com.carads.ArchitectureTest" />
+      <option name="METHOD_NAME" value="classInCoreCannotBeAnyDependencyOfAnyAnotherLayer(java.lang.Class)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArchitectureTest.classInCoreCannotBeAnyDependencyOfAnyAnotherLayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clean-arch.architecture-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.carads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.carads" />
+      <option name="MAIN_CLASS_NAME" value="br.com.carads.ArchitectureTest" />
+      <option name="METHOD_NAME" value="classInCoreCannotBeAnyDependencyOfAnyAnotherLayer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.clean-arch" />
-        <item itemvalue="Gradle.clean-arch [build]" />
+        <item itemvalue="JUnit.ArchitectureTest.classInCoreCannotBeAnyDependencyOfAnyAnotherLayer" />
+        <item itemvalue="JUnit.ArchitectureTest.classInConfigurationCannotBeAnyDependencyOfAnyAnotherLayer" />
+        <item itemvalue="Gradle.clean-arch [assemble]" />
         <item itemvalue="Gradle.clean-arch [clean]" />
+        <item itemvalue="JUnit.ArchitectureTest.classInCoreCannotBeAnyDependencyOfAnyAnotherLayer (1)" />
       </list>
     </recent_temporary>
   </component>

@@ -1,3 +1,6 @@
 dependencies {
-    implementation libs.archunit
+    implementation project(":app")
+
+    testImplementation libs.springboot
+    testImplementation libs.archunit
 }
