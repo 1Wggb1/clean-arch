@@ -1,4 +1,6 @@
-# Projeto multi-módulo
+# Projeto multi-módulo seguindo Clean Architecture e utilizando OpenApi Generator
+
+## Projeto multi-módulo Gradle
 
 Projeto com outros, pode ser útil para dividir monolitos em módulos ou deixar explicito alguma arquitetura,
 como por exemplo, clean architecture.
@@ -6,12 +8,12 @@ Cada módulo pode depender do outro ou ser independente e ter configurações es
 `settings.gradle` contém nome dos projetos, módulos, pode conter configurações de repositórios
 e outras configurações (presente no projeto raiz)
 
-## Criando um projeto multi-módulo
+## Criando um projeto multi-módulo com Gradle
 
 Para isso criar uma pasta nova e ir no settings.gradle e adicionar `include "project-name"`
 e adicionar build.gradle no módulo. Isso também pode ser feito pela ide.
 
-## Tipos de projeto multi-módulo
+### Tipos de projeto multi-módulo
 
 - [Multi-project `buildSrc`](https://docs.gradle.org/current/userguide/sharing_build_logic_between_subprojects.html)
     - Onde tem uma pasta com nome `buildSrc` contendo a lógica necessária para o build dos projetos, plugins e plugins
@@ -24,7 +26,7 @@ e adicionar build.gradle no módulo. Isso também pode ser feito pela ide.
     - Bom para compartilhar lógica de build ou isolar acesso a plugins com convenções
     - Cada build é isolada
 
-## Algumas tasks úteis
+### Algumas tasks Gradle úteis
 
 `gradlew tasks` - ver tasks
 `gradlew projects` - ver estrutura do projetos
@@ -32,7 +34,7 @@ e adicionar build.gradle no módulo. Isso também pode ser feito pela ide.
 `gradlew :module-name:task-name` - consegue rodar a task de um módulo especifico
 `gradlew :module-name:dependencies` - lista dependências do projeto
 
-## Plugin (Configurações adicionais para build do projeto)
+### Plugins Gradle e projeto multi-módulo (Configurações adicionais para build do projeto)
 
 Plugins no projeto raiz ou em sub-módulos só funciona para eles.
 Adiciona tasks como build, clean, compileJava, jar, assemble,... relacionadas ao java no submódulo onde está presente
@@ -109,7 +111,7 @@ project(":app") {
 }
 ```
 
-### allproject
+##### allproject
 
 Pode ser útil para configurações em todos os projetos incluindo o raiz como versão do java, encoding, repositórios e
 alguma dependência. Válido quando projeto raiz tem classes.
@@ -147,7 +149,7 @@ ext.libsTest = [
 ]
 ```
 
-### Version catalog - Para usar as libs é necessário importar a file por
+#### Gradle Version catalog (centralização de dependências) - Para usar as libs é necessário importar a file por
 
 ```
 apply from: "$rootProject.projectDir/dependencies.gradle"
@@ -188,7 +190,7 @@ dependencies {
 }
 ```
 
-## Sobre java plugin
+### Sobre java plugin
 
 - Task `processResources` copia arquivos da pasta resources em `build/resources/main`
 - Task `jar` gera jar em `build/libs` como nome <project-name>.<version>.jar
@@ -213,14 +215,14 @@ dependencies {
            :processTestResources
 ```
 
-## Gradle lifecycle
+### Gradle lifecycle
 
 1. Inicialization phase (começa olhando o settings.gradle e projetos)
 2. Configuration phase (olha os build.gradle e suas tasks - `configure` e tasks que possuem lógica fora de `doFirst`,
    `doLast` são executadas)
 3. Execution phase (ao rodar as tasks)
 
-## settings.gradle
+#### settings.gradle
 
 Define configurações gerais do projeto como módulos e configurações de plugins, repositórios etc.
 
@@ -229,7 +231,7 @@ Define configurações gerais do projeto como módulos e configurações de plug
 - `plugins` - bloco de plugins mas específico para build time
 - `dependencyResolutionManagement` - lugar centralizado para definir configurações de repositório de dependências
 
-## Sobre tipos de plugins
+#### Sobre tipos de plugins
 
 - `core` - plugins nativos do gradle
 - `community` - não é nativo do gradle, mas pode ser adicionado
@@ -240,7 +242,11 @@ Define configurações gerais do projeto como módulos e configurações de plug
 - Adiciona convenções compartilhadas entre o projeto (lugar centralizado para configurações em comuns entre projetos)
 - É possível definir versão do java, configurações de plugins, criação de tasks, dependências etc
 
+## Clean Architecture
+[Clean arch github](https://github.com/mattia-battiston/clean-architecture-example)
 [Clean arch](https://developers.redhat.com/articles/2023/08/08/implementing-clean-architecture-solutions-practical-example)
+[Hexagonal Arch - example](https://github.com/SvenWoltmann/hexagonal-architecture-java)
+
 
 ## Api First, Openapi e Openapi generator
 
@@ -254,7 +260,7 @@ presente na pasta app. Já
 a especificação swagger utilizada pelo gerador da poc está presente na raiz do projeto. Nela está definido os endpoints
 e modelos de uma api fake para encontrar anúncios de carros (ideia baseada no web-scrapping-car-ads).
 
-#### Alguns tradeoff do openapi generator
+### Alguns tradeoff do openapi generator
 
 - Algumas configurações tem acoplamento com outras, ou seja, desligando uma desliga outra, por exemplo,
   delegatorPattern, interfaceOnly, skipInterfaceDefault. E algumas configurações parecem confusas, por exemplo,
@@ -267,10 +273,10 @@ e modelos de uma api fake para encontrar anúncios de carros (ideia baseada no w
   a responsabilidade de retornar um ResponseEntity que faria mais sentido para um controller - acredito que é possível
   fazer a modificação para não retornar esse wrapper).
 
-[Especificação Openapi - Swagger](https://swagger.io/specification/)
-[Openapi editor](https://editor-next.swagger.io/)
-[Openapi Generator - spring](https://openapi-generator.tech/docs/generators/spring)
-[Openapi Generator - plugin gradle](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-gradle-plugin)
-[Openapi generator - templates dos códigos gerados](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator/src/main/resources/JavaSpring)
+- [Especificação Openapi - Swagger](https://swagger.io/specification/)
+- [Openapi editor](https://editor-next.swagger.io/)
+- [Openapi Generator - spring](https://openapi-generator.tech/docs/generators/spring)
+- [Openapi Generator - plugin gradle](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-gradle-plugin)
+- [Openapi generator - templates dos códigos gerados](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator/src/main/resources/JavaSpring)
 
 
