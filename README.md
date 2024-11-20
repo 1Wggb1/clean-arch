@@ -243,9 +243,9 @@ Define configurações gerais do projeto como módulos e configurações de plug
 - É possível definir versão do java, configurações de plugins, criação de tasks, dependências etc
 
 ## Clean Architecture
-[Clean arch github](https://github.com/mattia-battiston/clean-architecture-example)
-[Clean arch](https://developers.redhat.com/articles/2023/08/08/implementing-clean-architecture-solutions-practical-example)
-[Hexagonal Arch - example](https://github.com/SvenWoltmann/hexagonal-architecture-java)
+- [Clean arch github](https://github.com/mattia-battiston/clean-architecture-example)
+- [Clean arch](https://developers.redhat.com/articles/2023/08/08/implementing-clean-architecture-solutions-practical-example)
+- [Hexagonal arch github](https://github.com/SvenWoltmann/hexagonal-architecture-java)
 
 
 ## Api First, Openapi e Openapi generator
