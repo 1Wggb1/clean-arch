@@ -243,6 +243,9 @@ Define configurações gerais do projeto como módulos e configurações de plug
 - É possível definir versão do java, configurações de plugins, criação de tasks, dependências etc
 
 ## Clean Architecture
+O ponto essencial aqui não é divisão em pastas ou nomeclaturas (o clean arch pode ser aplicado mesmo sem existir pastas), mas sim o isolamente dos pontos chaves da aplicação (lógica de negócio e modelo da aplicação).
+O objetivo é separar o core da aplicação de frameworks e bibliotecas para assim facilitar uma possível migração futura sem afetar o core da aplicação, assim 'blindando' o core de possíveis quebra de regras. 
+
 - [Clean arch github](https://github.com/mattia-battiston/clean-architecture-example)
 - [Clean arch](https://developers.redhat.com/articles/2023/08/08/implementing-clean-architecture-solutions-practical-example)
 - [Hexagonal arch github](https://github.com/SvenWoltmann/hexagonal-architecture-java)
